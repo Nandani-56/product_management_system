@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="stylesheet/registration.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <form method="post" action="/registration/insertUser">
+      <h3>Sign Up</h3>
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Name" name="name" id="username" />
+
+      <label for="email">Email</label>
+      <input type="text" placeholder="Email" name="email" id="email" />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        id="password"
+      />
+
+      <label for="confirmpassword">Confirm Password</label>
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        id="confirmpassword"
+      />
+
+      <input type="submit" class="button" value="Sign Up" />
+      <div class="social">
+        <div class="go">Sign in with Google <i class="fab fa-google"></i></div>
+        <div class="signup">Sign In</div>
+      </div>
+    </form>
+  </body>
+</html>
